@@ -35,12 +35,12 @@ class MemberRepositoryTest {
 //		 }
 		
 		MemberVO memberVO = new MemberVO();
-		memberVO.setId("iu8");
-		memberVO.setPw("iu8");
-		memberVO.setName("Rename");
+		//memberVO.setId("iu8");
+		//memberVO.setPw("iu8");
+	//	memberVO.setName("Rename");
 		
 		MemberVO ar = memberRepository.findByIdAndPw("admin", "admin");
-		System.out.println(ar.getName());
+		//System.out.println(ar.getName());
 		
 		
 	}

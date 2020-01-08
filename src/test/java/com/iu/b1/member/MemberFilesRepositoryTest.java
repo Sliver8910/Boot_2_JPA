@@ -34,8 +34,8 @@ class MemberFilesRepositoryTest {
 		List<MemberFilesVO> ar = memberFilesRepository.findById("admin");
 		
 		for(MemberFilesVO memberFilesVO: ar) {
-			System.out.println(memberFilesVO.getId());
-			System.out.println(memberFilesVO.getFname());
+			//System.out.println(memberFilesVO.getId());
+			//System.out.println(memberFilesVO.getFname());
 		}
 		
 		
