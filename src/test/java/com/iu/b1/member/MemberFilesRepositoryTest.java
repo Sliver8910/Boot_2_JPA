@@ -12,8 +12,22 @@ import org.springframework.boot.test.context.SpringBootTest;
 class MemberFilesRepositoryTest {
 	@Autowired
 	private MemberFilesRepository memberFilesRepository;
-
+	
+	
+	
 	@Test
+	void selectTest() {
+		MemberFilesVO memberFilesVO = memberFilesRepository.findById(1).get();
+		System.out.println(memberFilesVO.getFname());
+		System.out.println(memberFilesVO.getMemberVO().getId());
+		
+	}
+	
+	
+	
+	
+
+	//@Test
 	void test() throws Exception {
 //		List<MemberFilesVO> ar = memberFilesRepository.findAll();
 //		for(MemberFilesVO memberFilesVO:ar) {
@@ -31,12 +45,6 @@ class MemberFilesRepositoryTest {
 //		 memberFilesRepository.save(memberFilesVO);
 		//id가 admin의 파일을 조회
 		// select * from memberFiles where id=?
-		List<MemberFilesVO> ar = memberFilesRepository.findById("admin");
-		
-		for(MemberFilesVO memberFilesVO: ar) {
-			//System.out.println(memberFilesVO.getId());
-			//System.out.println(memberFilesVO.getFname());
-		}
 		
 		
 		

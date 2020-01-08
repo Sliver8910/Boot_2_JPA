@@ -13,9 +13,9 @@
 <c:import url="../template/nav.jsp" />
 
 <div class="container">
-  <h2>Member Join</h2>
+  <h2>Member Update</h2>
 
-	<form:form action="./memberJoin" modelAttribute="memberVO" method="post" enctype="multipart/form-data">
+	<form:form action="./memberUpdate" modelAttribute="memberVO" method="post" enctype="multipart/form-data">
 	 <div class="form-group">
       <label for="Id">Id:</label>
       <form:input path="id" placeholder="Enter Id"  class="form-control" id="id"/>
@@ -57,31 +57,6 @@
 
 </div>
 
-
-
-<script type="text/javascript">
-$("#id").blur(function(){
-	var id= $("#id").val();
-	$.ajax({
-		type:"POST",
-		url:"./memberIdCheck",
-		data:{
-			id:id
-			},
-		success:function(data){
-				if(data){
-					alert("중복 ID");
-					$("#id").val("");
-					//$("#id").focus();
-				}else {
-					alert("사용 가능 ID");
-				}
-			}
-		});
-});
-
-
-</script>
 
 </body>
 </html>

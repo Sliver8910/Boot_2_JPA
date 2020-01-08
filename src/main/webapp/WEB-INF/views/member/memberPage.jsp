@@ -17,6 +17,7 @@
 	<h1>Photo</h1>
 	<img alt="" src="../upload/${member.memberFilesVO.fname}">
 	<a class="btn btn-primary" href="./memberFileDown?fnum=${member.memberFilesVO.fnum}">FileDown</a>
+	<a class="btn btn-danger" href="./memberUpdate">MemberUpdate</a>
 </div>
 
 </body>
