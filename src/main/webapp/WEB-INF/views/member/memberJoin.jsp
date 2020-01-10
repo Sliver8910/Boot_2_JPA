@@ -12,7 +12,7 @@
 <body>
 <c:import url="../template/nav.jsp" />
 
-<div class="container">
+<div class="container">   
   <h2>Member Join</h2>
 
 	<form:form action="./memberJoin" modelAttribute="memberVO" method="post" enctype="multipart/form-data">
